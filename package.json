@@ -1,0 +1,10 @@
+{
+  "name": "wtskorea",
+  "version": "1.0.0",
+  "description": "Prototype Website WTSKorea",
+  "main": "index.js",
+  "author": "David",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
