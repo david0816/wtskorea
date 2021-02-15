@@ -6,10 +6,10 @@ import bodyParser from "body-parser"
 import routes from "./routes"
 import globalRouter from "./routers/globalRouter"
 import userRouter from "./routers/userRouter"
-import wtsRouter from "./routers/wtsRouter"
+import givingRouter from "./routers/givingRouter"
+import newsRouter from "./routers/newsRouter"
+import benefitRouter from "./routers/benefitRouter"
 import campaignRouter from "./routers/campaignRouter"
-import conferenceRouter from "./routers/conferenceRouter"
-import alumniRouter from "./routers/alumniRouter"
 
 const app = express()
 
@@ -21,9 +21,9 @@ app.use(morgan("dev"))
 
 app.use(routes.home, globalRouter)
 app.use(routes.users, userRouter)
-app.use(routes.wts, wtsRouter)
 app.use(routes.campaign, campaignRouter)
-app.use(routes.conference, conferenceRouter)
-app.use(routes.alumni, alumniRouter)
+app.use(routes.giving, givingRouter)
+app.use(routes.benefit, benefitRouter)
+app.use(routes.news, newsRouter)
 
 export default app;

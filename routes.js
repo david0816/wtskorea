@@ -10,27 +10,30 @@ const USER_DETAIL = "/:id"
 const EDIT_PROFILE = "/edit-profile"
 const CHANGE_PASSWORD = "/change-password"
 
-// WTS
-const WTS = "/wts"
-const WTS_HISTORY = "/history"
-const WTS_PRESIDENT = "/president"
-const WTS_FACULTY = "/faculty"
-const WTS_KOREAOFFICE = "/korea-office"
+// Campaign 기금소개, 기금안내
+const CAMPAIGN = "/campaign" 
+const CAMPAIGN_PRESIDENT = "/president" //총장인사말
+const CAMPAIGN_PROGRAM = "/program" //기금소개(Far Greater, 후원이사, 오병이어)
+const CAMPAIGN_BROCHURE = "/brochure" // 후원이사제도 브로슈어
+const CAMPAIGN_REPORT = "/report" // 기부금 연간보고서
 
-// Campaign
-const CAMPAIGN = "/campaign"
-const CAMPAIGN_OVERVIEW = "/overview"
-const CAMPAIGN_DOCUMENTS = "/documents"
-const CAMPAIGN_DONATION = "/donation"
+// Giving 기부신청 및 참여
+const GIVING = "/giving"
+const GIVING_ACTION = "/action" // 참여방법
+const GIVING_ONLINE = "/online" // 온라인 후원신청
+const GIVING_MYPAGE = "/myPage" // 나의 기부, 기부자 페이지 (후원내역_연도별, 후원자정보, 기부금 영수증)
+const GIVING_TAX_BENEFIT = "/taxBenefit" // 세제혜택
+const GIVING_FAQ = "/question" // FAQ
 
-// Conference
-const CONFERENCE = "/conference"
-const CONFERENCE_REGISTER = "/register"
-const CONFERENCE_LECTURE = "/lecture"
-const CONFERENCE_NOTICE = "/notice"
+// Benefit 기부자 예우
+const BENEFIT = "/benefit"
+const BENEFIT_DONORS = "/donors" // 후원자 예우
+const BENEFIT_HONORS = "/honors" // 아너스 클럽
 
-// Alumni
-const ALUMNI = "/alumni"
+// News 기부스토리, 기부뉴스
+const NEWS = "/news" 
+const NEWS_STORY = "/story" // 기부뉴스, 기부스토리
+const NEWS_LETTER = "/letter" // 발전기금 뉴스레터
 
 
 const routes = {
@@ -43,20 +46,23 @@ const routes = {
     userDetail: USER_DETAIL,
     editProfile: EDIT_PROFILE,
     changePassword: CHANGE_PASSWORD,
-    wts: WTS,
-    wtsHistory: WTS_HISTORY,
-    wtsPresident: WTS_PRESIDENT,
-    wtsFaculty: WTS_FACULTY,
-    wtsKoreaOffice: WTS_KOREAOFFICE,
     campaign: CAMPAIGN,
-    campaginOverview: CAMPAIGN_OVERVIEW,
-    campaignDocuments: CAMPAIGN_DOCUMENTS,
-    campaignDonation: CAMPAIGN_DONATION,
-    conference: CONFERENCE,
-    conferenceRegister: CONFERENCE_REGISTER,
-    conferenceLecture: CONFERENCE_LECTURE,
-    conferenceNotice: CONFERENCE_NOTICE,
-    alumni: ALUMNI
+    campaignPresident: CAMPAIGN_PRESIDENT,
+    campaignProgram: CAMPAIGN_PROGRAM,
+    campaignBrochure: CAMPAIGN_BROCHURE,
+    campaignReport: CAMPAIGN_REPORT,
+    giving: GIVING,
+    givingAction: GIVING_ACTION,
+    givingOnline : GIVING_ONLINE,
+    givingMyPage: GIVING_MYPAGE,
+    givingTaxBenefit: GIVING_TAX_BENEFIT,
+    givingQuestion: GIVING_FAQ,
+    benefit: BENEFIT,
+    benefitDonors: BENEFIT_DONORS,
+    benefitHonors: BENEFIT_HONORS,
+    news: NEWS,
+    newsStory: NEWS_STORY,
+    newsLetter: NEWS_LETTER
 }
 
 export default routes
