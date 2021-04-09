@@ -10,6 +10,8 @@ import givingRouter from "./routers/givingRouter"
 import newsRouter from "./routers/newsRouter"
 import benefitRouter from "./routers/benefitRouter"
 import campaignRouter from "./routers/campaignRouter"
+import wtsRouter from "./routers/wtsRouter"
+import partnersRouter from "./routers/partnersRouter"
 
 const app = express()
 
@@ -21,6 +23,8 @@ app.use(morgan("dev"))
 
 app.use(routes.home, globalRouter)
 app.use(routes.users, userRouter)
+app.use(routes.wts, wtsRouter)
+app.use(routes.partners, partnersRouter)
 app.use(routes.campaign, campaignRouter)
 app.use(routes.giving, givingRouter)
 app.use(routes.benefit, benefitRouter)
