@@ -1,45 +1,45 @@
 // Home
-export const home = (req, res) => res.send("home")
-export const search = (req, res) => res.send("search")
+export const home = (req, res) => res.render("home")
+export const search = (req, res) => res.render("search")
 
 // WTS 웨스트민스터 글로벌 미니스트리
-export const wts = (req, res) => res.send("WTS Global Ministry")
-export const wtsMission = (req, res) => res.send("WTS Mission")
-export const wtsLeadership = (req, res) => res.send("WTS Leadership")
-export const wtsVision = (req, res) => res.send("WTS Vision")
-export const wtsMinistry = (req, res) => res.send("WTS Ministry")
+export const wts = (req, res) => res.render("wts")
+export const wtsMission = (req, res) => res.render("mission")
+export const wtsLeadership = (req, res) => res.render("leadership")
+export const wtsVision = (req, res) => res.render("vision")
+export const wtsMinistry = (req, res) => res.render("ministry")
 
 // PARTNERS 파트너스
-export const partners = (req, res) => res.send("Partners")
-export const partnersBOS = (req, res) => res.send("Partners Board Of Sponsors")
-export const partnersHonors = (req, res) => res.send("Partners Honors Club")
-export const partnersCouncil = (req, res) => res.send("Partners Korean Council")
-export const partnersOrganization = (req, res) => res.send("Partners Organization")
+export const partners = (req, res) => res.render("partners")
+export const partnersBOS = (req, res) => res.render("partnersBOS")
+export const partnersHonors = (req, res) => res.render("partnersHonors")
+export const partnersCouncil = (req, res) => res.render("partnersCouncil")
+export const partnersOrganization = (req, res) => res.render("partnersOrganization")
 
 // CAMPAIGN 기금안내, 기금소개
-export const campaign = (req, res) => res.send("Campaign index")
-export const campaignPresident = (req, res) => res.send("campaign president")
-export const campaignProgram = (req, res) => res.send("campaign program")
-export const campaignBrochure = (req, res) => res.send("campaign brochure")
+export const campaign = (req, res) => res.render("campaign")
+export const campaignPresident = (req, res) => res.render("campaignPresident")
+export const campaignBoardOfSponsors = (req, res) => res.render("campaignBOS")
+export const campaignFive = (req, res) => res.render("campaignFive")
 export const campaignReport = (req, res) => res.send("campaign report")
 
 
 // GIVING 후원참여, 후원신청
-export const giving = (req, res) => res.send("Giving index")
-export const givingAction = (req, res) => res.send("Giving Action")
-export const givingOnline = (req, res) => res.send("Giving Online")
-export const givingMyPage = (req, res) => res.send("Giving Mypage")
+export const giving = (req, res) => res.render("giving")
+export const givingAction = (req, res) => res.render("givingAction")
+export const givingOnline = (req, res) => res.render("givingOnline")
+export const givingMyPage = (req, res) => res.render("givingMyPage")
 export const givingTaxBenefit = (req, res) => res.send("Giving TaxBenefit")
 export const givingQuestion = (req, res) => res.send("Giving FAQ")
 
 
 // BENEFIT 파트너스
-export const benefit = (req, res) => res.send("파트너스")
+export const benefit = (req, res) => res.send("Benefit index")
 export const benefitDonors = (req, res) => res.send("Benefit Donors")
 export const benefitHonors = (req, res) => res.send("Benefit Honors")
 
 
 // NEWS 기부스토리, 기부소식
-export const news = (req, res) => res.send("News Index")
+export const news = (req, res) => res.render("news")
 export const newsStory = (req, res) => res.send("News Story")
 export const newsLetter = (req, res) => res.send("News Letter")

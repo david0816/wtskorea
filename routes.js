@@ -27,9 +27,9 @@ const PARTNERS_ORGANIZATION = "/organization" //협력기관
 // Campaign 기금소개, 기금안내
 const CAMPAIGN = "/campaign" 
 const CAMPAIGN_PRESIDENT = "/president" //총장인사말
-const CAMPAIGN_PROGRAM = "/program" //기금소개(후원이사 기금)
-const CAMPAIGN_BROCHURE = "/brochure" //기금소개(오병이어 장학기금)
-const CAMPAIGN_REPORT = "/report" // 기부금 연간보고서
+const CAMPAIGN_BOARDOFSPONSORS = "/boardofsponsors" //기금소개(후원이사 기금)
+const CAMPAIGN_FIVE = "/five" //기금소개(오병이어 장학기금)
+const CAMPAIGN_REPORT = "/report" // 기부금 연간보고서?
 
 // Giving 후원신청 및 참여
 const GIVING = "/giving"
@@ -72,8 +72,8 @@ const routes = {
     partnersOrganization: PARTNERS_ORGANIZATION,
     campaign: CAMPAIGN,
     campaignPresident: CAMPAIGN_PRESIDENT,
-    campaignProgram: CAMPAIGN_PROGRAM,
-    campaignBrochure: CAMPAIGN_BROCHURE,
+    campaignBoardOfSponsors: CAMPAIGN_BOARDOFSPONSORS,
+    campaignFive: CAMPAIGN_FIVE,
     campaignReport: CAMPAIGN_REPORT,
     giving: GIVING,
     givingAction: GIVING_ACTION,
