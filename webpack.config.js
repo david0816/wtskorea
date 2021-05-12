@@ -30,9 +30,15 @@ const config = {
                     {
                         loader: "postcss-loader",   // 2)CSS 호환관련 문제를 해결
                         options: {
-                            plugin() {
-                                return [autoprefixer({ browsers: "cover 99.5%" })];
-                            }
+                            postcssOptions: {
+                                plugins: [
+                                    ["autoprefixer",
+                                        {
+                                            browsers: "cover 99.5%"
+                                        },
+                                    ]
+                                ]
+                            }  
                         }
                     },
                     {
