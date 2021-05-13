@@ -1,0 +1,81 @@
+.header {
+    background-color: $wtsRed;
+    .header__wrapper{
+        width: 100%;
+        padding: 32px 0px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        position: relative;
+        .header__column{ 
+            a {
+                img {
+                    height: 54px;
+                    padding: 0 32px;
+                }
+            }
+            ul {
+                height: 72px;
+                display: flex;
+                font-size: 18px;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    height: 54px;
+                    width: 173px;
+                    a {
+                        height: 52px;
+                        color: white;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .menu {
+                        display: none;
+                    }
+                }
+                li:hover {
+                    display: block;
+                    .nav {
+                        color: $wtsLightGold;
+                    }
+                    .menu {
+                        display: block;
+                        background-color: $wtsRed;
+                        position: absolute;
+                        width: 100%;
+                        height: 25vh;
+                        top: 95px;
+                        left: 0px; 
+                        .menu__wrapper{
+                            background-color: $wtsGold;
+                            display: grid;
+                            grid-template-columns: 1fr 2fr;
+                            .wrapper__column{
+                                background-color: $wtsRed;
+                                display: flex;
+                                justify-content: space-around;
+                                .sub{
+                                    height: 25vh;
+                                    width: 173px;
+                                    font-size: 16px;
+                                    padding: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    li:hover{
+                                        a {
+                                            color: $wtsLightGold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
