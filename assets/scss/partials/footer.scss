@@ -1,0 +1,90 @@
+.footer {
+    background-color: #F8F8F8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    .footer__column{  
+        height: 468px;  
+        .column__wrapper
+        {
+            padding-left: 90px;
+            height: 318px;
+            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 15px;
+            .footer__contact {
+                min-width: 210px;
+                padding: 40px 70px;
+                display: flex;
+                flex-direction: column;
+                .contact__title{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+                .contact__contents {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                    :not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .footer__donate {
+                min-width: 210px;
+                padding: 40px 70px;
+                display: flex;
+                flex-direction: column;
+                .donate__title {
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+                .donate__contents{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 16px;
+                    :not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .footer__sns {
+                padding: 40px 70px;
+                display: flex;
+                flex-direction: column;
+                .sns__title{
+                    font-size: 20px;
+                    margin-bottom: 50px;
+                }
+                .sns__contents{
+                    display: flex;
+                    i {
+                        margin-right: 30px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .column__logo{
+            .footer__logo{
+                display: flex;
+                align-items: center;
+                .logo__img {
+                    padding-left: 160px;
+                }
+                .logo__copyright{
+                    padding-left: 280px;
+                }
+            }
+        }
+    }      
+    .footer__column{
+        .column__img{
+            padding-left: 51px;
+        }
+    
+    }
+}

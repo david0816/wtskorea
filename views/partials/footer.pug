@@ -1,5 +1,33 @@
 footer.footer
-    img(src="WTS-Logo-PrimaryDate-RGB.png" width=160, height=100)
-    .footer__icon
-        i.fab.fa-youtube 
-    span.footer__text &copy; Copyright #{new Date().getFullYear()} #{siteName}. All Rights Reserved.
+    .footer__column
+        .column__wrapper
+            .footer__contact
+                .contact__title
+                    span CONTACT US
+                .contact__contents
+                    span.contact__name Westminster Korea
+                    span.contact__addresss 서울시 서초구 반포대로 22길 39
+                    span.contact__addresss 하품싱글즈 502호
+                    span.contact__phone 02-2289-9081
+            .footer__donate
+                .donate__title
+                    span DONATE NOW
+                .donate__contents    
+                    span.donate__accountNumber 222222-2222-222
+                    spna.donate__accountName 예금주: 웨스트민스터 코리아
+            .footer__sns
+                .sns__title
+                    span FOLLOW US
+                .sns__contents    
+                    i.fab.fa-youtube
+                    i.fab.fa-facebook-f
+                    i.fab.fa-instagram
+        .column__logo        
+            .footer__logo
+                .logo__img
+                    img(src="WTS-Logo-PrimaryDate-RGB.png" width=160, height=100)
+                .logo__copyright
+                    span &copy; Copyright #{new Date().getFullYear()} #{siteName}. All Rights Reserved.
+    .footer__column
+        .column__img
+            img(src="이미지1.png" width="530", height="466")

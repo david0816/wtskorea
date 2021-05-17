@@ -33,6 +33,8 @@
                     }
                     .menu {
                         display: none;
+                        transition: height 5s ease-in;
+                        -webkit-transition: height 5s ease-in;
                     }
                 }
                 li:hover {
