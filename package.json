@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "David",
   "dependencies": {
+    "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.0",
     "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.14.1",
@@ -15,6 +16,7 @@
     "css-loader": "^5.2.4",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gh-pages": "^3.1.0",
     "helmet": "^4.4.1",
     "mini-css-extract-plugin": "^1.6.0",
     "morgan": "^1.10.0",
@@ -26,11 +28,20 @@
     "webpack-cli": "^4.7.0"
   },
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 2",
-    "dev:assets": "WEBPACK_ENV=development webpack -w",
-    "build:assets": "WEBPACK_ENV=production webpack"
+    "dev:server": "nodemon --exec babel-node src/init.js --delay 2 --ignore 'scss'",
+    "dev:assets": "cd src && WEBPACK_ENV=development webpack -w",
+    "build:assets": "cd src && WEBPACK_ENV=production webpack",
+    "build:server": "babel src --out-dir build --ignore 'src/assets','src/static','src/webpack.config.js'",
+    "copyAll": "cp -R src/static build && cp -R src/views build",
+    "build": "npm run build:server && npm run build:assets && npm run copyAll",
+    "prebuild": "rm -rf build",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "start": "node build/init.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
-  }
+    "nodemon": "^2.0.7",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "homepage": "https://david0816.github.io/wtskorea/"
 }
