@@ -49,7 +49,7 @@ app.use(_bodyParser["default"].urlencoded({
   extended: true
 }));
 app.use((0, _morgan["default"])("dev"));
-app.use(_express["default"]["static"](__dirname + "/images"));
+app.use("/images", _express["default"]["static"](_path["default"].join(__dirname, "images")));
 app.use("/static", _express["default"]["static"](_path["default"].join(__dirname, "static")));
 app.use(_middlewares.localsMiddleware);
 app.use(_routes["default"].home, _globalRouter["default"]);
