@@ -7,7 +7,7 @@ exports.newsLetter = exports.newsStory = exports.news = exports.benefitHonors = 
 
 // Home
 var home = function home(req, res) {
-  return res.render("home", {
+  return res.render("index", {
     pageTitle: "Home"
   });
 };
