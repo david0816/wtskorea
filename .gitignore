@@ -117,5 +117,6 @@ dist
 
 
 package-lock.json
+.env
 static
 build
