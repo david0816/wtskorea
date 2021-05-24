@@ -46,6 +46,7 @@ const BENEFIT_HONORS = "/honors" // 아너스 클럽
 
 // News 기부스토리, 기부뉴스
 const NEWS = "/news" 
+const NEWS_NOTICE = "/notice"
 const NEWS_STORY = "/story" // 기부뉴스, 기부스토리
 const NEWS_LETTER = "/letter" // 발전기금 뉴스레터
 
@@ -85,6 +86,7 @@ const routes = {
     benefitDonors: BENEFIT_DONORS,
     benefitHonors: BENEFIT_HONORS,
     news: NEWS,
+    newsNotice: NEWS_NOTICE,
     newsStory: NEWS_STORY,
     newsLetter: NEWS_LETTER
 }
