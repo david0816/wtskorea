@@ -41,5 +41,6 @@ export const benefitHonors = (req, res) => res.send("Benefit Honors")
 
 // NEWS 기부스토리, 기부소식
 export const news = (req, res) => res.render("news", {pageTitle: "뉴스"})
-export const newsStory = (req, res) => res.send("News Story")
-export const newsLetter = (req, res) => res.send("News Letter")
+export const newsNotice = (req, res) => res.render("News Notice")
+export const newsStory = (req, res) => res.render("News Story")
+export const newsLetter = (req, res) => res.render("News Letter")
