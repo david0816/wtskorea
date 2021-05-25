@@ -1,6 +1,9 @@
 .page__wrapper{
     border: 1px solid black;
-    display: flex;
+    .page__box{
+        height: 100vh;
+        background-color: red;
+    }
 }
 
 p {
