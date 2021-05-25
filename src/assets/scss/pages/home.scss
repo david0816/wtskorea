@@ -1,9 +1,11 @@
 .page__wrapper{
-    border: 1px solid black;
     .page__box{
-        height: 70vh;
-        background-color: #F8F8F8;
+        height: 80vh;
+        background-color: red;
         margin-bottom: 10px;
+        .box__contents{
+            background-image: url(/src/images/이미지1.png);
+        }
     }
 }
 
