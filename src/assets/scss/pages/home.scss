@@ -1,6 +1,6 @@
 .page__wrapper{
     .page__box{
-        height: 80vh;
+        height: 90vh;
         background-color: #f8f8f8;
         margin-bottom: 10px;
         .box__contents{
@@ -9,15 +9,54 @@
             justify-content: center;
             align-items: center;
             p{
-                width: 970px;
-                font-size: 50px;
+                width: 740px;
+                font-size: 38px;
                 text-align: center;
-                line-height: 2;
+                line-height: 1.8;
             }
+        }
+        .box__history{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .history__image{
+                height: 550px;
+                padding: 30px;
+                margin-right: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .history__text{
+                height: 550px;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .history__title{
+                    width: 350px;
+                    margin-bottom: 50px;
+                    p{
+                        font-weight: 600;
+                        font-size: 36px;
+                        line-height: 1.4;
+                    }
+                }
+                .history__content{
+                    width: 560px;
+                    p {
+                        font-size: 26px;
+                        line-height: 1.5;
+                        text-align: justify;
+                    }
+                }
+            }
+            
         }
     }
 }
 
 p {
-    font-size: 32px;;
+    font-size: 32px;
 }
